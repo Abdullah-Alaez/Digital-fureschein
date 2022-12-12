@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>is my function lesson</p>
+    <input type="text" placeholder="Enter Your Name " id="name" value="">
+    <button onclick="chatter()">Chat</button>
+    
+
+    <p id="result"></p>
+    <p id="Hello"></p>
+</body>
+<script>
+   function chatter()
+    {
+        if(document.getElementById('name').value =="Yousef" ||"YOUSEF" ||"yousef")
+        {
+            document.getElementById('Hello').innerHTML = "Hello teacher" 
+        }
+        
+else if (document.getElementById('name').value =="Wie haißt du?" ||
+       document.getElementById('name').value =="wie heißt du?" ||document.getElementById('name').value =="Wie heißt du" ||
+       document.getElementById('name').value =="wie heißt du")
+       
+        {
+            document.getElementById('Hello').innerHTML = "Ich heiße Abdullah" 
+        }
+
+    if(document.getElementById('name').value =="Wie alt bist du?"||document.getElementById('name').value =="Wie alt bist du ?" ||document.getElementById('name').value =="wie alt bist du ?"||document.getElementById('name').value =="wie alt bist du?"||document.getElementById('name').value =="Wie alt bist du"||document.getElementById('name').value =="wie alt bist du")
+
+    {
+        document.getElementById('Hello').innerHTML = "Ich bin 17 jahre alt"
+    }
+
+    if(document.getElementById('name').value =="Woher kommst du?"||document.getElementById('name').value =="Woher kommst du ?" ||document.getElementById('name').value =="woher kommst du ?"||document.getElementById('name').value =="woher kommst du?"||document.getElementById('name').value =="Woher kommst du"||document.getElementById('name').value =="woher kommst du")
+
+    {
+        document.getElementById('Hello').innerHTML = "Ich komme aus Syrien"
+    }
+
+        else
+        {
+            document.getElementById('Hello').innerHTML = "Hello" + document.getElementById('name').value 
+        }
+        
+    }
+   
+</script>
+</html>

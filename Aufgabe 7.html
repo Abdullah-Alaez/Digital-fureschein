@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=Adresse] {
+          width: 100%;
+          padding: 25px 50px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+        <body>
+        
+        <h3>Daten Form</h3>
+        
+        <div>
+          <form action="/action_page.php">
+            <label for="fname"> Name</label>
+            <input type="text" id="fname" name="Name" placeholder="Name..">
+        
+            <label for="lname">Nach Name</label>
+            <input type="text" id="lname" name="Nach Name" placeholder="Nach Name..">
+
+            <label for="Geburtsdatum">Geburtsdatum</label>
+            <input type="text" id="lname" name="Geburtsdatum" placeholder="TT.MM.JJJJ..">
+
+        
+            <label for="Handy Nummer">Handy Nummer</label>
+            <input type="text" id="lname" name="Hndy Nummer" placeholder="Handy Nummer..">
+
+            <label for="Email">Email</label>
+            <input type="text" id="lname" name="Email" placeholder="Email..">
+
+           
+            <label for="Geschlecht
+        ">Geschlecht
+        </label>
+            <select input type="text" id="Geschlecht 
+        " name="Geschlecht" placeholder="Geschlecht Wählen..">
+        ">
+              <option value="Herr">Herr</option>
+              <option value="Frau">Frau</option>
+            </select>
+
+            <label for="Adresse">Adresse</label>
+            <input type="Adresse" id="Iadresse" name="Adresse" placeholder="Adresse..">
+            
+          
+            
+            
+            <input type="submit" value="Senden" Button onclick="document.getElementById('Senden').innerHTML='Ihre Daten Würde Gesendet'"></Button>
+            <p id="Senden">Ihre Daten Senden</p>
+          </form>
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Abdullah Chat </title>
+</head>
+<body>
+
+    <p> He is my function lesson</p>
+    <input type="text" placeholder="Stelle deine Fragen" id="name" value="">
+    <button onclick="chatter()">Chat</button>
+    
+
+    <p id="result"></p>
+    <p id="Hello"></p>
+</body>
+<script>
+    
+    
+    
+    function chatter()
+{
+      
+        
+    if(document.getElementById('name').value =="Wie haißt du?"||
+       document.getElementById('name').value =="wie heißt du?"||
+       document.getElementById('name').value =="Wie heißt du"||
+       document.getElementById('name').value =="wie heißt du")
+       
+        {
+            document.getElementById('Hello').innerHTML = "Ich heiße Abdullah" 
+        }
+
+    if(document.getElementById('name').value =="Wie alt bist du?"||
+    document.getElementById('name').value =="Wie alt bist du ?" ||
+    document.getElementById('name').value =="wie alt bist du ?"||
+    document.getElementById('name').value =="wie alt bist du?"||
+    document.getElementById('name').value =="Wie alt bist du"||
+    document.getElementById('name').value =="wie alt bist du")
+
+    {
+        document.getElementById('Hello').innerHTML = "Ich bin 17 jahre alt"
+    }
+
+    if(document.getElementById('name').value =="Woher kommst du?"||
+    document.getElementById('name').value =="Woher kommst du ?" ||
+    document.getElementById('name').value =="woher kommst du ?"||
+    document.getElementById('name').value =="woher kommst du?"||
+    document.getElementById('name').value =="Woher kommst du"||
+    document.getElementById('name').value =="woher kommst du")
+
+    {
+        document.getElementById('Hello').innerHTML = "Ich komme aus Syrien"
+    }
+
+    if(document.getElementById('name').value =="Wo wohnst du?"||
+    document.getElementById('name').value =="Wo wohnst du ?" ||
+    document.getElementById('name').value =="wo wohnst du ?"||
+    document.getElementById('name').value =="wo wohnst du?"||
+    document.getElementById('name').value =="Wo wohnst du"||
+    document.getElementById('name').value =="wo wohnst du")
+
+    {
+        document.getElementById('Hello').innerHTML ="Ich wohne in Dortmund"
+    }
+
+    if(document.getElementById('name').value =="Was ist deine Muttersprache?"||
+    document.getElementById('name').value =="Was ist deine Muttersprache ?" ||
+    document.getElementById('name').value =="was ist deine muttersprache ?"||
+    document.getElementById('name').value =="was ist deine muttersprache?"||
+    document.getElementById('name').value =="Was ist deine muttersprache"||
+    document.getElementById('name').value =="was ist deine muttersprache")
+
+    {
+        document.getElementById('Hello').innerHTML = "Meine Muttersprache ist Arabisch."
+    }
+        
+ }
+</script>
+</html>
