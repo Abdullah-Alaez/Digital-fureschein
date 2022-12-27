@@ -9,44 +9,49 @@
 <body style="background-color: bisque ;" >
   
   <style>
+    
+   h1 {
+    font-size: 75px;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
   
-  div {
+   div {
     border-radius: 10px;
     
-    padding: 50px;
+    padding: 38px;
     text-align: center;
     background-color: #6b67677f;
     font-size: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-  p{
+
+   p {
     font-size: 75px;
     text-align: initial;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    
   }
   
-  input{
+   input {
     font-size: 50px;
     background-color: rgba(18, 7, 28, 0.319);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-  button{
+
+   button {
     font-size: 50px;
     background-color: #6b67677b;
   }
   </style>
-
+    <h1>حاول ان تجمع الارقام</h1>
     <div id="number-display"></div>
     <p id="numbers"></p>
     <p>Your Points: <span id="point">0</span></p>
-    
     <input type="text" id="number-input"></input>
     <button onclick="checksum()">Click </button>
     
 
-    <script>
+  <script>
       const NUMBERS_TO_DISPLAY = 10;
       let currentNumberIndex = 0;
       let numbers = [];
@@ -54,40 +59,40 @@
       function showNextNumber() {
         if (currentNumberIndex >= NUMBERS_TO_DISPLAY) {
           return;
-        }
+         }
   
-        let number = Math.floor(Math.random() * 10);
-        numbers.push(number);
-        document.getElementById("number-display").innerText = number; 
-        currentNumberIndex++;
-        setTimeout(showNextNumber, 1000);
+         let number = Math.floor(Math.random() * 10);
+         numbers.push(number);
+         document.getElementById("number-display").innerText = number; 
+         currentNumberIndex++;
+         setTimeout(showNextNumber, 1000);
        
-      }
-      function checksum() {
-    let expectedSum = numbers.reduce((a, b) => a + b, 0);
-    let actualSum = parseInt(document.getElementById("number-input").value);
+         }
+         function checksum() {
+         let expectedSum = numbers.reduce((a, b) => a + b, 0);
+         let actualSum = parseInt(document.getElementById("number-input").value);
     
-    if (expectedSum === actualSum) {
-    alert("Correct! The correct sum was: " + expectedSum);
-    document.getElementById("point").innerHTML = parseInt(document.getElementById("point").innerHTML) + 100;
-    setTimeout(function() {
-    currentNumberIndex = 0;
-    numbers = [];
-    showNextNumber();
-    }, 5000);
-  } 
-  else {
-    alert("Incorrect. The correct sum was: " + expectedSum);
-    if(document.getElementById("point").value < 0){
-    document.getElementById("point").innerHTML = parseInt(document.getElementById("point").innerHTML) - 100;
-    }
-    setTimeout(function() {
-  currentNumberIndex = 0;
-  numbers = [];
-  showNextNumber();
-  }, 5000);
-  } }
-   showNextNumber();
+         if (expectedSum === actualSum) {
+         alert("Correct! The correct sum was: " + expectedSum);
+         document.getElementById("point").innerHTML = parseInt(document.getElementById("point").innerHTML) + 100;
+         setTimeout(function() {
+         currentNumberIndex = 0;
+         numbers = [];
+         showNextNumber();
+         }, 5000);
+         } 
+         else {
+         alert("Incorrect. The correct sum was: " + expectedSum);
+        if(document.getElementById("point").value < 0){
+         document.getElementById("point").innerHTML = parseInt(document.getElementById("point").innerHTML) - 100;
+         }
+         setTimeout(function() {
+         currentNumberIndex = 0;
+         numbers = [];
+         showNextNumber();
+         }, 5000);
+         } }
+         showNextNumber();
 
   </script>
   
