@@ -28,7 +28,7 @@
 
    p {
     font-size: 75px;
-    text-align: initial;
+    text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
@@ -46,9 +46,9 @@
     <h1>حاول ان تجمع الارقام</h1>
     <div id="number-display"></div>
     <p id="numbers"></p>
-    <p>Your Points: <span id="point">0</span></p>
+    <p>المجموع النقاط : <span id="point">0</span></p>
     <input type="text" id="number-input"></input>
-    <button onclick="checksum()">Click </button>
+    <button onclick="المجموع()">اجابه</button>
     
 
   <script>
@@ -56,7 +56,7 @@
       let currentNumberIndex = 0;
       let numbers = [];
   
-      function showNextNumber() {
+      function  الرقمالتالي() {
         if (currentNumberIndex >= NUMBERS_TO_DISPLAY) {
           return;
          }
@@ -65,34 +65,35 @@
          numbers.push(number);
          document.getElementById("number-display").innerText = number; 
          currentNumberIndex++;
-         setTimeout(showNextNumber, 1000);
+         setTimeout( الرقمالتالي, 1400);
        
          }
-         function checksum() {
+         function المجموع() {
          let expectedSum = numbers.reduce((a, b) => a + b, 0);
          let actualSum = parseInt(document.getElementById("number-input").value);
     
          if (expectedSum === actualSum) {
-         alert("Correct! The correct sum was: " + expectedSum);
+         alert(" المجموع الصحيح هو : " + expectedSum);
          document.getElementById("point").innerHTML = parseInt(document.getElementById("point").innerHTML) + 100;
          setTimeout(function() {
          currentNumberIndex = 0;
          numbers = [];
-         showNextNumber();
+         الرقمالتالي();
          }, 5000);
          } 
          else {
-         alert("Incorrect. The correct sum was: " + expectedSum);
+         alert(" المجموع الصحيح هو : " + expectedSum);
         if(document.getElementById("point").value < 0){
          document.getElementById("point").innerHTML = parseInt(document.getElementById("point").innerHTML) - 100;
          }
          setTimeout(function() {
          currentNumberIndex = 0;
          numbers = [];
-         showNextNumber();
+         الرقمالتالي();
          }, 5000);
          } }
-         showNextNumber();
+         الرقمالتالي();
+        
 
   </script>
   
