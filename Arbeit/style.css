@@ -11,10 +11,12 @@ background-color: bisque;
 } 
 
  div {
-  border-radius: 10px; 
-  padding: 38px;
+  width: 400px;
+  height: 175px;
+  border-radius: 50%;
+  margin: auto;
   text-align: center;
-  background-color:#6b67677f;
+  background-color:#807b7b7f;
   font-size: 100px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -31,12 +33,12 @@ input {
   background-color: rgba(18, 7, 28, 0.319);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
-  transform: translate(550px,-150px);
+  transform: translate(250px,-150px);
 }
 
 button {
   font-size: 50px;
   background-color:#6b67677b;
-  transform: translate(-58px,-150px);
+  transform: translate(-358px,-150px);
 }
  
