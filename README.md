@@ -1,2 +1,0 @@
-# Digital-Fureschein
-INDEX.html
