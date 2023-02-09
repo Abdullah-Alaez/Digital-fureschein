@@ -14,7 +14,7 @@ background-color: rgb(36, 211, 164);
  div {
   width: 400px;
   height: 175px;
-  border-radius: 50%;
+  border-style: 100%;
   margin: auto;
   box-shadow: 7px 7px 10px gray  ;
   text-shadow: 7px 17px 10px rgba(0, 0, 0, 0.444);
